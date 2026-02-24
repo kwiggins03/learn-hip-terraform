@@ -32,7 +32,7 @@ module "vpc" {
 }
 
 
-resource "aws_instance" "app_server" {
+resource "aws_instance" "t4g.small" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
 
